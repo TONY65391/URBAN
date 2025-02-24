@@ -15,3 +15,7 @@ def index(request):
 def images(request):
     template = loader.get_template('images.html')
     return HttpResponse(template.render(request = request))
+
+def next_page(request):
+    template = loader.get_template('next_page.html')
+    return HttpResponse(template.render(request = request))
