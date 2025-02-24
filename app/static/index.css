@@ -56,6 +56,7 @@ a {text-decoration: none;}
     border: 1px solid rgb(110, 109, 109);
     border-radius: 3px;
     width: 200px;
+    z-index: 1;
 }
 .dropdown-content p {padding: 10px; transition: 0.5s; color: white;}
 
@@ -63,12 +64,13 @@ a {text-decoration: none;}
     display: inline-table;
 }
 
+body {background: rgba(20, 13, 13, 0.7);} 
 
 @media screen and (max-width:700px) {
     .head p {display: none; transition: 0.5s;} 
     .dropdown{float: left; width: 100%; transition: 0.3s;}  
     .enc {height: 130px; margin-bottom: 40px; margin-top: 30px;}
-    .img-cont {width: 47%; height: 400px; margin-bottom: 30px; transition: 0.3s; margin-top: 30px;}
+    .img-cont {width: 47%; height: 400px; margin-bottom: 30px; transition: 0.3s;}
     #shop {font-size: 30; transition: 0.3s;}
 }
 @media screen and (min-width:700px) {
@@ -76,7 +78,7 @@ a {text-decoration: none;}
 }
 @media screen and (min-width:570px) {   
     .img-cont {width: 31%; height: 400px; transition: 0.3s;}
-    .enc {margin-top: 40px;}
+    .enc {margin-top: 10px;}
     #shop {font-size: 40;}
     #path {margin-bottom: 20px;}
 }
