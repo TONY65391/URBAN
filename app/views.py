@@ -27,3 +27,15 @@ def coffee_table(request):
     context = {'form':form}
     template = loader.get_template('coffee_table.html')
     return HttpResponse(template.render(request = request, context = context))
+
+def aurora_shelf(request):
+    form = FORM
+    context = {'form':form}
+    template = loader.get_template('5-row-shelf.html')
+    return HttpResponse(template.render(request = request, context = context))
+
+def pendant_lamp(request):
+    form = FORM
+    context = {'form':form}
+    template = loader.get_template('aurora-pendaant-lamp.html')
+    return HttpResponse(template.render(request = request, context = context))
