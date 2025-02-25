@@ -5,6 +5,8 @@ from django.http import HttpResponse
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from . models import amount
+from . forms import FORM
 
 # Create your views here.
 
@@ -19,3 +21,9 @@ def images(request):
 def next_page(request):
     template = loader.get_template('next_page.html')
     return HttpResponse(template.render(request = request))
+
+def coffee_table(request):
+    form = FORM
+    context = {'form':form}
+    template = loader.get_template('coffee_table.html')
+    return HttpResponse(template.render(request = request, context = context))

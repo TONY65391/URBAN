@@ -64,7 +64,6 @@ a {text-decoration: none;}
     display: inline-table;
 }
 
-body {background: rgba(20, 13, 13, 0.7);} 
 
 @media screen and (max-width:700px) {
     .head p {display: none; transition: 0.5s;} 
